@@ -1974,58 +1974,7 @@ L.geoJSON(geojson,
 
 
 
-//Objeto
-class expediente {
-        constructor(expNum, ki, kf, status, brach, deliveryDate, owner, ownerPhone, expDrawing, lat, lng){
-                this.expNum = expNum;
-                this.ki = ki;
-                this.kf = kf;
-                this.status = status;
-                this.brach = brach;
-                this.deliveryDate = deliveryDate;
-                this.owner = owner;
-                this.ownerPhone = ownerPhone;
-                this.expDrawing = expDrawing;
-                this.lat = lat;
-                this.lng = lng;
-        }
-}
 
-
-
-const expediente037 = new expediente('SABI-2019-037','K058+332', 'K058+349', 'Expropiado 已征地', 'Rama 1', '2019.11.23', 'Ricardo Vindas Rojas', '6075-1054, 8497-1367', '/plano37.png',10.20534, -83.82283);
-const expediente010 = new expediente('SABI-2019-010','K059+260', 'K059+556', 'Expropiado 已征地', 'Rama 1', '2019.11.23', 'Enrique Rodríguez Arroyo', '"8305-2136, 2710-3907, 8681-4365 (whatsapp)"', '/plano37.png',10.20295, -83.81328);
-
-const arr1 = [
-        {
-                expNum: 'SABI-2019-037',
-                ki:'K058+332',
-                kf:'K058+349', 
-                status:'Expropiado 已征地',
-                brach: 'Rama 1',
-                deliveryDate:'2019.11.23',
-                owner:'Ricardo Vindas Rojas', 
-                ownerPhone: '6075-1054, 8497-1367',
-                expDrawing: '/plano37.png',
-                lat: 10.20534,
-                lng: -83.82283
-        },
-        {
-                expNum: 'SABI-2019-010',
-                ki:'K059+260',
-                kf:'K059+556', 
-                status:'Expropiado 已征地',
-                brach: 'Rama 1',
-                deliveryDate:'2019.11.23',
-                owner:'Enrique Rodríguez Arroyo', 
-                ownerPhone: '8305-2136, 2710-3907, 8681-4365 (whatsapp)',
-                expDrawing: '/plano37.png',
-                lat: 10.20295,
-                lng: -83.81328
-        },
-
-
-];
 
 
 
@@ -2053,7 +2002,7 @@ var select = document.getElementById("select");
                   lat: 10.20534,
                   lng: -83.82283,
                   coord:'10.20534, -83.82283',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Izquierdo (左侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2065,11 +2014,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Enrique Rodríguez Arroyo', 
                   ownerPhone: '8305-2136, 2710-3907, 8681-4365 (whatsapp)',
-                  expDrawing: '/plano37.png',
+                  expDrawing: '/plano010new.png',
                   lat: 10.20295,
                   lng: -83.81328,
                   coord:'10.20295, -83.81328',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2081,11 +2030,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Enrique Rodríguez Arroyo', 
                   ownerPhone: '8305-2136, 2710-3907, 8681-4365 (whatsapp)',
-                  expDrawing: '',
+                  expDrawing: '/plano010(2).png',
                   lat: 10.20309,
                   lng: -83.81428, 
                   coord:'10.20309, -83.81428',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2097,11 +2046,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Almacén Antonio Gazel Sociedad Anónima', 
                   ownerPhone: '8833-3105',
-                  expDrawing: '',
+                  expDrawing: '/plano027.png',
                   lat: 10.20378,
                   lng: -83.76628,
                   coord:'10.20378, -83.76628',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },  
           {
@@ -2113,11 +2062,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Marvin Brenes Fuentes', 
                   ownerPhone: '8833-4895',
-                  expDrawing: '',
+                  expDrawing: '/plano011.png',
                   lat: 10.20055,
                   lng: -83.67291,
                   coord:'10.20055, -83.67291',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },  
           {
@@ -2129,11 +2078,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Rafael Núñez Núñez', 
                   ownerPhone: '2760-0356, 60077249',
-                  expDrawing: '',
+                  expDrawing: '/plano123.png',
                   lat: 10.16983,
                   lng: -83.60758,
                   coord:'10.16983, -83.60758',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2145,11 +2094,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Haydee Falcomira del Socorro Torrentes Serrano', 
                   ownerPhone: '8980-9190, 8633-5562',
-                  expDrawing: '',
+                  expDrawing: 'plano122.png',
                   lat: 10.16967,
                   lng: -83.60747,
                   coord:'10.16967, -83.60747',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2161,11 +2110,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Alice Gloria Peraza Solís', 
                   ownerPhone: '6076-5452',
-                  expDrawing: '',
+                  expDrawing: '/plano121.png',
                   lat: 10.16833,
                   lng: -83.60603,
                   coord:'10.16833, -83.60603',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
             },
           {
@@ -2193,11 +2142,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Rosa Justina Mora Chavarría', 
                   ownerPhone: '8866-0022, 8884-5303',
-                  expDrawing: '',
+                  expDrawing: '/plano128.png',
                   lat: 10.16405,
                   lng: -83.60234,
                   coord:'10.16405, -83.60234',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2209,11 +2158,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Karen Dinorah Enríquez Gómez', 
                   ownerPhone: '8806-34-54',
-                  expDrawing: '',
+                  expDrawing: '/plano007.png',
                   lat: 10.1635,
                   lng: -83.60178,
                   coord:'10.1635, -83.60178',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2225,11 +2174,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Agropecuaria Corinto S.A', 
                   ownerPhone: '2225-5046, 8924-9506',
-                  expDrawing: '',
+                  expDrawing: '/plano006.png',
                   lat: 10.21217,
                   lng: -83.88871,
                   coord:'10.21217, -83.88871',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2241,11 +2190,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Ricardo Vindas Rojas', 
                   ownerPhone: '6075-1054',
-                  expDrawing: '',
+                  expDrawing: '/plano056.png',
                   lat: 10.20602,
                   lng: -83.82476,
                   coord:'10.20602, -83.82476',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Izquierdo (左侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2257,11 +2206,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Rodolfo Delgado Brenes', 
                   ownerPhone: '8476-2874',
-                  expDrawing: '',
+                  expDrawing: '/plano055.png',
                   lat: 10.07628,
                   lng: -83.39283,
                   coord:'10.07628, -83.39283',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2273,11 +2222,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Hacienda Las Delicias S.A', 
                   ownerPhone: '2760-0221',
-                  expDrawing: '',
+                  expDrawing: '/plano012(1).png',
                   lat: 10.1944,
                   lng: -83.64384,
                   coord:'10.1944, -83.64384',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2289,11 +2238,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Hacienda Las Delicias S.A', 
                   ownerPhone: '2760-0221',
-                  expDrawing: '',
+                  expDrawing: 'plano012(2).png',
                   lat: 10.19416,
                   lng: -83.64349,
                   coord:'10.19416, -83.64349',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2305,11 +2254,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Johnny Trinidad Cárdenas Álfaro', 
                   ownerPhone: '8391-9630, 2716-6291',
-                  expDrawing: '',
+                  expDrawing: '/plano054.png',
                   lat: 10.20295,
                   lng: -83.81328,
                   coord:'10.20295, -83.81328',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2321,11 +2270,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Nayubel Briceño Piedra', 
                   ownerPhone: '8694-5767, 2718-4280',
-                  expDrawing: '',
+                  expDrawing: '/plano072.png',
                   lat: 10.06609,
                   lng: -83.36616,
                   coord:'10.06609, -83.36616',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2337,11 +2286,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Ramón Solís Granados', 
                   ownerPhone: 'N/A',
-                  expDrawing: '',
+                  expDrawing: 'plano126.png',
                   lat: 10.17044,
                   lng: 83.60796,
                   coord:'10.17044, -83.60796',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           }, 
           {
@@ -2353,11 +2302,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'José Joaquín González Campos', 
                   ownerPhone: '2260-5372, 6229-2334, 8713-8588',
-                  expDrawing: '',
+                  expDrawing: '/plano001.png',
                   lat: 10.21264,
                   lng: -83.8447,
                   coord:'10.21264, -83.8447',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2369,11 +2318,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Corrales Dormond Sociedad Anónima', 
                   ownerPhone: '8308-7344, 8712-6446',
-                  expDrawing: '',
+                  expDrawing: '/plano052.png',
                   lat: 10.07331,
                   lng: -83.37097,
                   coord:'10.07331, -83.37097',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },    
           {
@@ -2385,11 +2334,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Nazario Arcadio Santana Santana', 
                   ownerPhone: '8320-7126',
-                  expDrawing: '',
+                  expDrawing: '/plano119.png',
                   llat: 10.04626,
                   lng: -83.31969,
                   coord:'10.04626, -83.31969',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
           },
           {
@@ -2401,11 +2350,11 @@ var select = document.getElementById("select");
                   deliveryDate:'2019.11.23',
                   owner:'Grupo Empresarial EUSSE Sociedad Anónima', 
                   ownerPhone: '7105-6622, 2710-2874',
-                  expDrawing: '',
+                  expDrawing: '/plano033.png',
                   lat: 10.21268,
                   lng: -83.84459,
                   coord:'10.21268, -83.84459',
-                  location: 'Lado Derecho (右侧)| Lado Izquierdo (左侧)',
+                  location: 'Lado Derecho (右侧)',
                   tipoEst:'N/A'
                 
           },
