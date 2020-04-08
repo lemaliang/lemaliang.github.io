@@ -11,6 +11,7 @@
 .leon{
     text-align: left;
     background-color: white;
+    padding: 15px;
 }
 .map{
     float: left;
@@ -30,8 +31,9 @@
     padding-left: 10px;
 }
 .catastro{
-    height: 100%;
     width: 100%;
+    text-align: center;
+    float: right;
 }
 #map { 
     height:400px; width: 100%; 
@@ -44,4 +46,10 @@
 .topTitle{
     background-color: white;
     padding: 10px;
+}
+.geoloc{
+    text-align: right;
+}
+.geo{
+    float: right;
 }

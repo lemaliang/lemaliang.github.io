@@ -19,16 +19,14 @@
     <div class="container">
       <div class="row topTitle">
         <div class="col">
-          <h2 class="textSup">Datos de Expropiaciones Proyecto Ruta Nacional No. 32</h2>
-          <h3 class="textZh">32号公路征地数据</h3>
-          <hr>
-          <!--Inicia el Mapa-->
           
-          <!--Fin del Mapa-->
+        </div>
+        <div class="col-7">
+          
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col'7">
           <form>
             <div class="form-group" id="selector">
               <i class="large material-icons">folder_special</i>
@@ -36,11 +34,27 @@
               <select name="" class="form-control form-control-lg" id="select">
                 <option value="seleccione">Seleccione 选择</option>    
               </select>
-              <small id="emaiselectorHelp" class="form-text text-muted">Seleccione el Expediente para ver todos los detalles<br>想要详细看，请选择征地文件</small>
             </div>
+            <hr>
             <div class="resultado"></div>
             <!--<button type="submit" class="btn btn-primary">Ver Detalles (细看)</button>-->
           </form>
+        </div>
+        <div class="col">
+          <h4 class="textSup">Dpto Coordinación CHEC - Ruta#32</h4>
+          <h5 class="textZh">32号公路中港征迁部</h5>
+          <hr> 
+          <i class="large material-icons map geo">language</i>
+          <h6 class="geoloc">Geolocalización（征地地图位置）</h6>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div id="map">
+        </div>
+      <div class="row">
+        <div class="col-8">
+          
           <div class="row">
             <div class="col tablaDetalle">
               <table class="table table-sm table-dark">
@@ -81,23 +95,21 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col">
-                  <i class="large material-icons map">map</i>
-                  <h5>Plano de Expropiación （征地地籍图）</h5>
-                  <div class="row">
-                    <div class="col finca" id="catastro">
-                      <img id="mapaCat" class="catastro">
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
         </div>
-          <div class="col-7 leon">
-            <i class="large material-icons map">language</i>
-            <h5>Geolocalización（征地地图位置）</h5>
-            <div id="map">
+          <div class="col-4 leon">
+            
+              <i class="large material-icons map">map</i>
+              <h6>Plano de Expropiación （征地地籍图）</h6>
+              <div class="row">
+                <div class="col finca" id="catastro">
+                  <img id="mapaCat" class="catastro">
+              </div>
+              
+            </div>
             
             </div>
           </div>
