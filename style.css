@@ -1,0 +1,47 @@
+.textSup{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.textZh{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.leon{
+    text-align: left;
+    background-color: white;
+}
+.map{
+    float: left;
+    text-align: left;
+    margin-right: 5px;
+}
+.finca{
+    margin-top: 10px;
+}
+.tablaDetalle{
+    margin-top: 20px;
+}
+.propietario{
+    font-weight: bold;
+    font-size: 15pt;
+    color: #ccc;
+    padding-left: 10px;
+}
+.catastro{
+    height: 100%;
+    width: 100%;
+}
+#map { 
+    height:400px; width: 100%; 
+    margin-top: 18px;
+}
+.container{
+
+    padding: 20px;
+}
+.topTitle{
+    background-color: white;
+    padding: 10px;
+}

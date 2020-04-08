@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+    <title>CHEC DE COSTA RICA S.A. - DEPARTAMENTO DE COORDINACION</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row topTitle">
+        <div class="col">
+          <h2 class="textSup">Datos de Expropiaciones Proyecto Ruta Nacional No. 32</h2>
+          <h3 class="textZh">32号公路征地数据</h3>
+          <hr>
+          <!--Inicia el Mapa-->
+          
+          <!--Fin del Mapa-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-group" id="selector">
+              <i class="large material-icons">folder_special</i>
+              <label for="selectorExp"><h5 class="ExpTitulo">Expediente（征地文件号）</h5></label>
+              <select name="" class="form-control form-control-lg" id="select">
+                <option value="seleccione">Seleccione 选择</option>    
+              </select>
+              <small id="emaiselectorHelp" class="form-text text-muted">Seleccione el Expediente para ver todos los detalles<br>想要详细看，请选择征地文件</small>
+            </div>
+            <div class="resultado"></div>
+            <!--<button type="submit" class="btn btn-primary">Ver Detalles (细看)</button>-->
+          </form>
+          <div class="row">
+            <div class="col tablaDetalle">
+              <table class="table table-sm table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col"><i class="small material-icons">location_on</i>KI 起点</th>
+                    <th scope="col"><i class="small material-icons">location_on</i>KF 终点</th>
+                    <th scope="col">Estado 状态</th>
+                    <th scope="col">Rama 标段</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="ki" id="ki"></td>
+                    <td class="kf" id="kf"></td>
+                    <td class="estado" id="estado"></td>
+                    <td class="rama" id="rama"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col">
+                  <i class="large material-icons map">my_location</i>
+                  <p>Ubicación 位置: <span class="propietario" id="location"></span></p>
+                  <hr>
+                  <i class="large material-icons map">directions_bus</i>
+                  <p>Estructura 结构种类: <span class="propietario" id="estructura"></span></p>
+                  <hr>
+                  <i class="large material-icons map">update</i>
+                  <p>Fecha Entrega 交付日期: <span class="propietario" id="fechaEntrega"></span></p>
+                  <hr>
+                  <i class="large material-icons map">account_circle</i>
+                  <p>Propietario 地主姓名: <span class="propietario" id="propietarioNombre"></span></p>
+                  <hr>
+                  <i class="large material-icons map">phone_iphone</i>
+                  <p>Teléfono 电话: <span class="propietario" id="telefono"></span></p>
+                  <hr>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <i class="large material-icons map">map</i>
+                  <h5>Plano de Expropiación （征地地籍图）</h5>
+                  <div class="row">
+                    <div class="col finca" id="catastro">
+                      <img id="mapaCat" class="catastro">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-7 leon">
+            <i class="large material-icons map">language</i>
+            <h5>Geolocalización（征地地图位置）</h5>
+            <div id="map">
+            
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <!-- script Mapa leaflet-->
+
+    <script>
+      
+  
+    </script>  
+  
+  </body>
+</html>
